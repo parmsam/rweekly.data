@@ -33,10 +33,10 @@ devtools::install_github("parmsam/rweekly.data")
 
 This is a basic example which shows you how to solve a common problem:
 
-```{r example}
+```{r example, warning = F, message=F}
 library(rweekly.data)
 library(dplyr)
 ## basic example code
-# glimpse(rweekly_data)
+glimpse(rweekly_data)
 ```
 
