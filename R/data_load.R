@@ -46,6 +46,6 @@ data_load <- function(
     tidyr::unnest_wider(content)
   # Clean names
   cleaned_tbl <- unnested_tbl %>% 
-    janitor::clean_names(allow_dupes = T)
+    janitor::clean_names(allow_dupes = F)
   return(cleaned_tbl)
 }
