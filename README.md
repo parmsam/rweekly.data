@@ -109,3 +109,6 @@ glimpse(rweekly_data)
 #> $ ` R Users`                             <list> <NULL>, <NULL>, <NULL>, <NULL>…
 #> $ `R Adjacent`                           <list> <NULL>, <NULL>, <NULL>, <NULL>…
 ```
+
+<!-- # Generate logo -->
+<!-- psam::gen_hex_sticker("man/figures/cat_with_glasses.png", pkg_name = "rweekly.data", txt_main_size = 37, txt_main_color = "white") -->
