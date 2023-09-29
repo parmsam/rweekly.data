@@ -25,6 +25,7 @@
 #' @importFrom purrr map_df
 #' @importFrom tibble tibble
 #' @importFrom tidyr unnest_wider
+#' @importFrom janitor clean_names
 data_load <- function(
     repo_name = "rweekly/rweekly.org", 
     branch_name = "gh-pages", 
@@ -43,5 +44,8 @@ data_load <- function(
   unnested_tbl <- converted_tbl %>% 
     tidyr::unnest_wider(yaml) %>%
     tidyr::unnest_wider(content)
-  return(unnested_tbl)
+  # Clean names
+  cleaned_tbl <- unnested_tbl %>% 
+    janitor::clean_names(allow_dupes = T)
+  return(cleaned_tbl)
 }
