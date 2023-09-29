@@ -6,11 +6,6 @@
 \title{RWeekly Releases data}
 \format{
 A data frame with over 30 columns
-\describe{
-\item{title}{Release title}
-\item{description}{Release description}
-\item{image}{Main image path}
-}
 }
 \source{
 \url{https://github.com/rweekly/rweekly.org/}
